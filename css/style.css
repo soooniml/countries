@@ -1,0 +1,290 @@
+.navBackground{
+    background: white;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.navCenter{
+    margin: auto;
+}
+
+.navInline{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navInline .hg{
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
+    color: black;
+}
+
+.navInline ul{
+    padding-left: 0;
+    list-style: none;
+    color: black;
+}
+
+.list{
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+}
+
+.list li a{
+    text-decoration: none;
+    color: black;
+}
+
+.signout li a{
+    color: black;
+    text-decoration: none;
+}
+
+.signout li:hover a{
+    text-decoration: underline;
+}
+
+.toggle{
+    display: none;
+}
+
+@media (max-width:768px){
+    .toggle{
+        display: block;
+    }
+
+    .navBackground.activeBack{
+        height: 240px;
+    }
+
+    .navBackground.activeBack .list{
+        display: block;
+    }
+    .list{
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        width: 90%;
+        display: none;
+    }
+
+    .list li{
+        margin: 10px 0;
+        border-bottom: 1px solid black;
+    }
+}
+
+
+
+
+
+
+.search{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.search input{
+    width: 30%;
+    height:40px;
+}
+
+.card-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  cursor: pointer;
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  padding: 20px;
+  position: relative;
+  -webkit-tap-highlight-color: rgba(0,0,0,0.025);
+  text-align: center;
+  transition: height 1000ms;
+}
+
+
+
+.text{
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    flex-direction: column;
+}
+.text-content{
+    width: 100%;
+    height: 90%;
+}
+.card.expanded {
+  height: 500px;
+}
+.titlem{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.image{
+    width: 100%;
+    height: 200px;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.chevron {
+  position: absolute;
+  bottom: 20px;
+  left: calc(50% - 15px);
+  transform-origin: 50%;
+  transform: rotate(180deg);
+  transition: transform 1000ms;
+}
+.card.expanded .chevron {
+  transform: rotate(0deg);
+}
+.text-down{
+    opacity: 0;
+    transition: 1s;
+}
+.card.expanded .text-down{
+    opacity: 1;
+    transition: 1s;
+}
+.title {
+  margin: 20px 0;
+}
+
+/* .navBackground{
+    background: white;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.navCenter{
+    margin: auto;
+}
+
+.navInline{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navInline .hg{
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
+    color: black;
+}
+
+.navInline ul{
+    padding-left: 0;
+    list-style: none;
+    color: black;
+}
+
+.list{
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+}
+
+.list li a{
+    text-decoration: none;
+    color: black;
+}
+
+.cards{
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center; 
+}
+
+.card{
+    height: 300px;
+    width: 300px;
+    margin: 20px;
+    padding: 10px;
+}
+
+
+
+.card_content{
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+}
+
+.photocontent{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+function Card(res){
+    return `
+    <div class="card">
+                    <div class="card_content">
+                        <div class="photocontent">
+                            <div class="image" >
+                            <img src = ${res.flag} >
+                            </div>
+                        </div>
+                        <div class="text">
+                            <p>Capital: ${res.capital}</p>
+                            <p>Region: ${res.region}</p>
+                            <p>SubRegion: ${res.subregion}</p>
+                            <p>Population: ${res.population}</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            
+        `
+}
+
+ */
+
+
+
+
+
+
